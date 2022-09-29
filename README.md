@@ -10,6 +10,10 @@ Process:
 - The jpeg files are initially uploaded into a source S3 bucket. This action serves as an event for triggering the Lambda function. The Lambda function then writes the files to the output S3 bucket, storing the files in a png format.
 - Used a deployment package, as per AWS documentation, to deploy my function code to Lambda. The deployment package is a .zip file containing the code created on my local machine, bundled together with the dependencies. The dependencies of the code are PIL and boto3, and its second level dependencies (i.e. the packages that are used by PIL and boto3). The deployment package was created locally using Bash scripting and uploaded manually into the AWS Console in the Lambda user interface.
 
+Improvements: 
+- Could use IaaC (Infrastructure as a Code) to create the deployment package and upload it to AWS Lambda. 
+- Examples of such IaaC tools are : Serverless Framework, CloudFormation or Terraform.
+
 
 Choice of tools:
 - AWS Lambda and S3 : automatically scaling up and down, these services provide low-cost flexibility and run in a highly available configuration across multiple data centres.
