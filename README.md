@@ -1,7 +1,7 @@
 # aws_lambda_pil
 
 Objectives:
-- Demonstrate how to automate data processing using event-driven computer services (here AWS Lambda) for large-scale file processing.
+- Demonstrate how to automate data processing using event-driven cloud services (here AWS Lambda) for large-scale file processing.
 - Demonstrate knowledge of AWS services by combining AWS Lambda with other AWS services (Amazon's Simple Storage Service (S3), their object storage service).
 - Demonstrate knowledge of deployment packages and working with buckets (container for objects stored in Amazon S3).
 
